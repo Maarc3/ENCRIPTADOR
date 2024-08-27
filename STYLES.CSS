@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.container {
+position: relative;
+width: 100vw;
+height: 100vh;
+background: #636161;
+}
+
+.texto {
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    left: 5%;
+    top: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 100%;
+    background-color:  #f3f5fc;
+
+}
+.texto::placeholder{
+    color: rgb(79, 79, 156);
+}
+.terycon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 5%;
+    top: 67%;
+}
+.terycon p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+    color:antiquewhite;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    padding: 3% 5;
+    position: absolute;
+    width: 70%;
+    left: 25;
+    top: 70%;
+}
+.btn-encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap:10px;
+    width: 25%;
+    background-color: rgb(12, 57, 83);
+    border-radius: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(194, 197, 206);
+}
+.btn-desencriptar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap:10px;
+    width: 25%;
+    background-color: rgb(15, 67, 97);
+    border-radius: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: rgb(194, 197, 206);
+}
+.btn-desencriptar:hover,
+.btn-encriptar:hover{
+    margin: 0.5%;
+    padding: 2%;
+}
+.imagen {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 61%;
+    left: 60%;
+    top: 4%;
+    background: #f3f5fc;
+    box-shadow: 0px 10 px 15 px -7px rgba(0,0,0, 0.09);
+    border-radius: 30px;
+}
+.texto-encriptado {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 15px;
+    position: absolute;
+    width:100%;
+    top: 65%;
+    text-align: center;
+
+}
+.texto-encriptado h2 {
+    width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #636161
+    ;
+}
+.texto-encriptadop{
+    width: 60%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    color: #6e6868
+    ;
+}
+.imagen img {
+    position:absolute;
+    width: 80%;
+    height: 40%;
+    top: 15%
+}
+@media (max-width: 57.5cm) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .area {
+        width: 100%;
+    }
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 4%;
+        border-radius: 10px;
+    }
+    .terycon{
+        width: 50%;
+        height: 90%;
+        left: 10%;
+        top: 22%;
+    }
+    .terycon p{
+    font-size: 12px;}
+    .botones {
+        width: 80%;
+        left: 10%;
+        top: 70%
+    }
+    .btn-desencriptar, .btn-encriptar {
+    width: 45%;
+    border-radius: 10px;
+}
+    .btn-encriptar:hover, .btn-desencriptar:hover {
+    margin: 0.2%;
+    width: 45%;
+    padding: 1%;
+}
+.imagen {
+    width: 70%;
+    height: 12%;
+    left: 12%;
+    top: 80%;
+}
+.texto-encriptado {
+    width: 100%;
+    top: 8%;
+}
+.imagen img {
+top: 0;
+display: none;
+visibility: hidden;
+}
+}
